@@ -1,0 +1,77 @@
+.calories_notice_p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.calories_error_p {
+    color: red;
+    text-align: center;
+}
+
+.form_calories_find {
+    display:inline-block;
+}
+
+.calories_find_form_input {
+    display: inline-block;
+    float: right;
+}
+
+.find_submit {
+    width: 60px;
+}
+
+.clear_submit {
+    width: 85px;
+}
+
+.media {
+    margin-bottom: 50px;
+}
+
+.media-body {
+    margin-top: 30px;
+}
+
+.calories_find_empty_result_p {
+    color: red;
+    text-align: center;
+    margin: 160px auto;
+    font-size: 2.5rem;
+}
+
+#id_title {
+    width: 100px;
+}
+
+#id_kcal_from {
+    width: 100px;
+}
+
+#id_kcal_to {
+    width: 100px;
+}
+
+#id_protein_from {
+    width: 100px;
+}
+
+#id_protein_to {
+    width: 100px;
+}
+
+#id_oil_from {
+    width: 100px;
+}
+
+#id_oil_to {
+    width: 100px;
+}
+
+#id_carb_from {
+    width: 100px;
+}
+
+#id_carb_to {
+    width: 100px;
+}

@@ -1,0 +1,104 @@
+{% extends "sportsmen/footer.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Регистрация" context "sign_up_block_title" %}
+{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" type = "text/css" href="{% static 'css/signup.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="body">
+    <div class="container">
+        <div class="signup">
+            {% if error %}
+                <div class="signup_error">
+                    {{ error }}
+                </div>
+            {% endif %}
+            <div class="signup_text">
+                <p> {{ stage }} </p>
+            </div>
+            <div class="signup_form">
+                <form action="/account/signup/" method="POST">
+                    {% csrf_token %}
+                    {% for field in form %}
+                    <div class="form_signup">
+                        {{ field.label_tag }}
+                        <div class="input_field">{{field}}</div>
+                    </div>
+                    {% endfor %}
+                    <div class="signup_form_input">
+                        <input type="submit" value="{{ submit_value }}">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+function onMonthChange(element) {
+    {% if form.month.auto_id %}
+        var day = {{ form.day.auto_id|safe }};
+        var year = {{ form.year.auto_id|safe }};
+
+        var day_count = new Date(year.value, element.value, 0).getDate();
+        var day_options = day.options;
+
+        while (day_options.length != day_count) {
+            if (day_options.length > day_count) {
+                day_options[day_options.length - 1].remove();
+            } else {
+                var opt = document.createElement("option");
+                opt.value = day_options.length + 1;
+                opt.innerHTML = day_options.length + 1;
+                day.appendChild(opt);
+            }
+        }
+    {% endif %}
+}
+
+function onYearChange(element) {
+    {% if form.year.auto_id %}
+        var day = {{ form.day.auto_id|safe }};
+        var month = {{ form.month.auto_id|safe }};
+
+        var day_count = new Date(element.value, month.value, 0).getDate();
+        var day_options = day.options;
+
+        while (day_options.length != day_count) {
+            if (day_options.length > day_count) {
+                day_options[day_options.length - 1].remove();
+            } else {
+                var opt = document.createElement("option");
+                opt.value = day_options.length + 1;
+                opt.innerHTML = day_options.length + 1;
+                day.appendChild(opt);
+            }
+        }
+    {% endif %}
+}
+
+function onCountryRegionChange(element) {
+    {% if form.phone_number.auto_id %}
+        var phone_number = {{ form.phone_number.auto_id|safe }};
+        phone_number.value = element.value;
+        var phone_number_mask = "+0(000)000-00-00";
+        if (element.value == "+380") {
+            phone_number_mask = "+000(000)000-00-00";
+        } else if (element.value == "+375") {
+            phone_number_mask = "+000(00)000-00-00";
+        } else if (element.value == "+77") {
+            phone_number_mask = "+0(000)000-00-00";
+        }
+        $('input[name="phone_number"]').mask(phone_number_mask);
+    {% endif %}
+}
+
+</script>
+{% endblock %}

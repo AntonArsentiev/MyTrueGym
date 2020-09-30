@@ -1,0 +1,70 @@
+{% extends "sportsmen/footer.html" %}
+{% load static %}
+{% load i18n %}
+{% load l10n %}
+
+{% block title %}
+    {% trans "Калории" context "calories_block_title" %}
+{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" type = "text/css" href="{% static 'css/calories.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="body">
+    <div class="container">
+        <div class="calories_notice">
+            <p class="calories_notice_p">{% trans 'Энергетическая ценность указана на 100г продукта' context 'calories_notice_p' %}</p>
+        </div>
+        {% if error %}
+        <div class="calories_error">
+            <p class="calories_error_p"> {{error}} </p>
+        </div>
+        {% endif %}
+        {% if form %}
+            <div class="calories_find_form">
+                <form action="/calories/" method="POST">
+                    {% csrf_token %}
+                    {% for field in form %}
+                    <div class="form_calories_find">
+                        {{field}}
+                    </div>
+                    {% endfor %}
+                    <div class="calories_find_form_input">
+                        <input class="find_submit" type="submit" value="{% trans 'Найти' context 'calories_index_find_form' %}" name="find">
+                        <input class="clear_submit" type="submit" value="{% trans 'Сбросить' context 'calories_index_find_form' %}" name="clear">
+                    </div>
+                </form>
+            </div>
+        {% endif %}
+        {% if items %}
+            {% get_current_language as LANGUAGE_CODE %}
+            {% for item in items %}
+                <div class="media">
+                    <img src="{{ item.avatar.url }}" class="mr-3" alt="..." width="150px" height="150px">
+                    <div class="media-body">
+                        <h5 class="mt-0">
+                            {% if LANGUAGE_CODE == "ru" %}
+                                {{item.title}}
+                            {% else %}
+                                {{item.title_en}}
+                            {% endif %}
+                        </h5>
+                        <p>
+                            {% trans 'Ккал' context 'calories_kcal' %} {% localize off %} {{ item.kcal }} {% endlocalize %},
+                            {% trans 'Белки' context 'calories_protein' %} {% localize off %} {{ item.protein }} {% endlocalize %},
+                            {% trans 'Жиры' context 'calories_oil' %} {% localize off %} {{ item.oil }} {% endlocalize %},
+                            {% trans 'Углеводы' context 'calories_carb' %} {% localize off %} {{ item.carb }} {% endlocalize %}
+                        </p>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="calories_find_empty_result">
+                <p class="calories_find_empty_result_p">{% trans 'К сожалению по вашему запросу ничего не найдено' context 'calories_find_empty_result_p' %}</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

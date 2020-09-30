@@ -1,0 +1,20 @@
+{% extends "sportsmen/footer.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Ошибка" context "500_error_block_title" %}
+{% endblock %}
+
+{% block body %}
+<div class="body">
+    <div class="container">
+        <div class="page_error_image">
+            <img src="{% static 'images/500.jpg' %}">
+        </div>
+        <div class="page_error_text">
+            <p>{% trans "Внутреняя ошибка сервера!" context "500_page_error_text" %}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

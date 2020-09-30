@@ -1,0 +1,60 @@
+.welcome {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.welcome p {
+    text-align: center;
+}
+
+.main {
+    font-size: 2rem;
+}
+
+.avatar_info {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+.data_info {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.data_info td:nth-child(1n) {
+    width: 100px;
+    text-align: center;
+}
+
+.data_info td:nth-child(2n) {
+    width: 200px;
+    text-align: center;
+}
+
+.data_info_td {
+    padding-top: 20px;
+}
+
+.data_info_user p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.data_info_rating p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.info_email_message p {
+    text-align: center;
+    color: red;
+}
+
+.info_email_message_verified p {
+    text-align: center;
+    color: green;
+}

@@ -1,0 +1,29 @@
+.signup {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.signup_text {
+    text-align: center;
+}
+
+.signup_text p {
+    font-size: 1.95rem;
+}
+
+.form_signup {
+    padding-bottom: 15px;
+}
+
+.signup_form_input {
+    margin-left: 70px;
+}
+
+.signup_form_input input {
+    width: 150px;
+}
+
+.signup_error {
+    color: red;
+}

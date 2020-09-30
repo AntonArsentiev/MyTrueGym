@@ -1,0 +1,91 @@
+{% extends "sportsmen/footer.html" %}
+{% load i18n %}
+{% load l10n %}
+
+{% block title %}
+    {% trans "Аккаунт" context "info_block_title" %}
+{% endblock %}
+
+{% block body %}
+<div class="body">
+    <div class="container">
+        {% if email_message %}
+        <div class="info_email_message">
+            <p> {{email_message}} </p>
+        </div>
+        {% endif %}
+        {% if email_message_verified %}
+        <div class="info_email_message_verified">
+            <p> {{email_message_verified}} </p>
+        </div>
+        {% endif %}
+        <div class="avatar_info">
+        {% for data in sportsman_data %}
+            {% if data.0 == "avatar" %}
+            <img src="{{ data.1.url }}" width="100px" height="100px">
+            {% endif %}
+        {% endfor %}
+        </div>
+        <div class="data_info">
+            <div class="data_info_user">
+                <p>
+                    {% trans "Основные данные" context "info_data_info" %}
+                </p>
+            </div>
+            <table>
+            {% for data in user_data %}
+            <tr>
+                {% for val in data %}
+                <td>
+                    <div class="data_info_td">
+                        {{ val }}
+                    </div>
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+            </table>
+        </div>
+        <div class="data_info">
+            <table>
+            {% for data in sportsman_data %}
+                {% if data.0 != "avatar" %}
+                <tr>
+                    {% for val in data %}
+                        <td>
+                            <div class="data_info_td">
+                                {{ val }}
+                            </div>
+                        </td>
+                    {% endfor %}
+                </tr>
+                {% endif %}
+            {% endfor %}
+            </table>
+        </div>
+        <div class="data_info">
+            <div class="data_info_rating">
+                <p>
+                    {% trans "Достижения" context "info_data_info" %}
+                </p>
+            </div>
+            <table>
+            {% trans "Атлет" context "rating_data_athlete" as athlete_exclude %}
+            {% for data in rating_data %}
+                {% if data.0 != athlete_exclude %}
+                <tr>
+                    {% for val in data %}
+                    <td>
+                        <div class="data_info_td">
+                             {% localize off %} {{ val }} {% endlocalize %}
+                        </div>
+                    </td>
+                    {% endfor %}
+                </tr>
+                {% endif %}
+            {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

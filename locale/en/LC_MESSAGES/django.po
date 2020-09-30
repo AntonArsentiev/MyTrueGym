@@ -1,0 +1,613 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-29 13:02+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\calories\forms.py:8 .\calories\forms.py:11
+msgid "Название"
+msgstr "Title"
+
+#: .\calories\forms.py:17 .\calories\forms.py:20
+msgid "Ккал от"
+msgstr "Kcal from"
+
+#: .\calories\forms.py:31 .\calories\forms.py:34
+msgid "Ккал до"
+msgstr "Kcal to"
+
+#: .\calories\forms.py:45 .\calories\forms.py:48
+msgid "Белки от"
+msgstr "Protein from"
+
+#: .\calories\forms.py:59 .\calories\forms.py:62
+msgid "Белки до"
+msgstr "Protein to"
+
+#: .\calories\forms.py:73 .\calories\forms.py:76
+msgid "Жиры от"
+msgstr "Oil from"
+
+#: .\calories\forms.py:87 .\calories\forms.py:90
+msgid "Жиры до"
+msgstr "Oil to"
+
+#: .\calories\forms.py:101 .\calories\forms.py:104
+msgid "Углеводы от"
+msgstr "Carb from"
+
+#: .\calories\forms.py:115 .\calories\forms.py:118
+msgid "Углеводы до"
+msgstr "Carb to"
+
+#: .\calories\templates\calories\index.html:7
+msgctxt "calories_block_title"
+msgid "Калории"
+msgstr "Calories"
+
+#: .\calories\templates\calories\index.html:18
+msgctxt "calories_notice_p"
+msgid "Энергетическая ценность указана на 100г продукта"
+msgstr "The energy value is indicated per 100g of product"
+
+#: .\calories\templates\calories\index.html:35
+msgctxt "calories_index_find_form"
+msgid "Найти"
+msgstr "Find"
+
+#: .\calories\templates\calories\index.html:36
+msgctxt "calories_index_find_form"
+msgid "Сбросить"
+msgstr "Clear"
+
+#: .\calories\templates\calories\index.html:55
+msgctxt "calories_kcal"
+msgid "Ккал"
+msgstr "Kcal"
+
+#: .\calories\templates\calories\index.html:56
+msgctxt "calories_protein"
+msgid "Белки"
+msgstr "Protein"
+
+#: .\calories\templates\calories\index.html:57
+msgctxt "calories_oil"
+msgid "Жиры"
+msgstr "Oil"
+
+#: .\calories\templates\calories\index.html:58
+msgctxt "calories_carb"
+msgid "Углеводы"
+msgstr "Carb"
+
+#: .\calories\templates\calories\index.html:65
+msgctxt "calories_find_empty_result_p"
+msgid "К сожалению по вашему запросу ничего не найдено"
+msgstr "Unfortunately nothing was found for your search"
+
+#: .\calories\views.py:46 .\calories\views.py:121
+msgid "Пожалуйста проверяйте корректность вводимых данных"
+msgstr "Please check the correctness of the entered data"
+
+#: .\ratings\models.py:13
+msgid "Бег на 60 м"
+msgstr "60 m running"
+
+#: .\ratings\models.py:23
+msgid "Бег на 100 м"
+msgstr "100 m running"
+
+#: .\ratings\models.py:33
+msgid "Бег на 3000 м"
+msgstr "3000 m running"
+
+#: .\ratings\models.py:41
+msgid "Подтягивания"
+msgstr "Chin up"
+
+#: .\ratings\models.py:46
+msgid "Отжимания"
+msgstr "Push up"
+
+#: .\ratings\models.py:51
+msgid "Приседания"
+msgstr "Sit up"
+
+#: .\ratings\models.py:56
+msgid "Приседания со штангой"
+msgstr "Squat"
+
+#: .\ratings\models.py:61
+msgid "Жим лежа со штангой"
+msgstr "Bench press"
+
+#: .\ratings\models.py:66
+msgid "Тяга штанги от пола"
+msgstr "Dead lift"
+
+#: .\ratings\templates\ratings\index.html:6
+msgctxt "ratings_block_title"
+msgid "Рейтинги"
+msgstr "Ratings"
+
+#: .\ratings\templates\ratings\index.html:14
+msgctxt "ratings_header"
+msgid "Общие рейтинги"
+msgstr "Ratings"
+
+#: .\ratings\templates\ratings\index.html:16
+msgctxt "ratings_header"
+msgid "Результаты не сформированы"
+msgstr "The results are not generated"
+
+#: .\sportsmen\forms.py:10 .\sportsmen\forms.py:99 .\sportsmen\forms.py:112
+#: .\sportsmen\forms.py:127 .\sportsmen\forms.py:174 .\sportsmen\models.py:46
+msgid "Номер телефона"
+msgstr "Phone number"
+
+#: .\sportsmen\forms.py:15 .\sportsmen\forms.py:141
+msgid "Пароль"
+msgstr "Password"
+
+#: .\sportsmen\forms.py:24
+msgid "Январь"
+msgstr "January"
+
+#: .\sportsmen\forms.py:25
+msgid "Февраль"
+msgstr "February"
+
+#: .\sportsmen\forms.py:26
+msgid "Март"
+msgstr "March"
+
+#: .\sportsmen\forms.py:27
+msgid "Апрель"
+msgstr "April"
+
+#: .\sportsmen\forms.py:28
+msgid "Май"
+msgstr "May"
+
+#: .\sportsmen\forms.py:29
+msgid "Июнь"
+msgstr "June"
+
+#: .\sportsmen\forms.py:30
+msgid "Июль"
+msgstr "July"
+
+#: .\sportsmen\forms.py:31
+msgid "Август"
+msgstr "August"
+
+#: .\sportsmen\forms.py:32
+msgid "Сентябрь"
+msgstr "September"
+
+#: .\sportsmen\forms.py:33
+msgid "Октябрь"
+msgstr "October"
+
+#: .\sportsmen\forms.py:34
+msgid "Ноябрь"
+msgstr "November"
+
+#: .\sportsmen\forms.py:35
+msgid "Декабрь"
+msgstr "December"
+
+#: .\sportsmen\forms.py:39 .\sportsmen\views.py:28
+msgid "Мужской"
+msgstr "Male"
+
+#: .\sportsmen\forms.py:40 .\sportsmen\views.py:30
+msgid "Женский"
+msgstr "Female"
+
+#: .\sportsmen\forms.py:44 .\sportsmen\forms.py:160 .\sportsmen\views.py:48
+msgid "Имя"
+msgstr "First name"
+
+#: .\sportsmen\forms.py:49 .\sportsmen\forms.py:165 .\sportsmen\views.py:49
+msgid "Фамилия"
+msgstr "Last name"
+
+#: .\sportsmen\forms.py:54
+msgid "День"
+msgstr "Day"
+
+#: .\sportsmen\forms.py:58
+msgid "Месяц"
+msgstr "Month"
+
+#: .\sportsmen\forms.py:67
+msgid "Год"
+msgstr "Year"
+
+#: .\sportsmen\forms.py:76 .\sportsmen\models.py:47 .\sportsmen\views.py:26
+msgid "Пол"
+msgstr "Gender"
+
+#: .\sportsmen\forms.py:83
+msgid "Россия (+7)"
+msgstr "Russia (+7)"
+
+#: .\sportsmen\forms.py:84
+msgid "Украина (+380)"
+msgstr "Ukraine (+380)"
+
+#: .\sportsmen\forms.py:85
+msgid "Белорусь (+375)"
+msgstr "Belarus (+375)"
+
+#: .\sportsmen\forms.py:86
+msgid "Казахстан (+77)"
+msgstr "Kazakhstan (+77)"
+
+#: .\sportsmen\forms.py:90
+msgid "Страна"
+msgstr "Country"
+
+#: .\sportsmen\forms.py:119 .\sportsmen\forms.py:134
+msgid "Код"
+msgstr "Code"
+
+#: .\sportsmen\forms.py:155
+msgid "Фотография"
+msgstr "Avatar"
+
+#: .\sportsmen\forms.py:170 .\sportsmen\views.py:50
+msgid "Почта"
+msgstr "Mail"
+
+#: .\sportsmen\tasks.py:15
+msgid "Подтверждение почтового адреса"
+msgstr "Email address confirmation"
+
+#: .\sportsmen\tasks.py:16
+msgid ""
+"<p>Для подтверждения почтового адреса перейдите по ссылке <a href=\"{}://{}/"
+"account/settings/email\">Перейдите тут</a></p>"
+msgstr ""
+"<p>To confirm your email address, follow the link <a href=\"{}://{}/account/"
+"settings/email\">Go here</a></p>"
+
+#: .\sportsmen\templates\sportsmen\400.html:6
+msgctxt "400_error_block_title"
+msgid "Ошибка"
+msgstr "Error"
+
+#: .\sportsmen\templates\sportsmen\400.html:16
+msgctxt "400_page_error_text"
+msgid "Плохо сформирован запрос!"
+msgstr "The results are not generated"
+
+#: .\sportsmen\templates\sportsmen\403.html:6
+msgctxt "403_error_block_title"
+msgid "Ошибка"
+msgstr "Error"
+
+#: .\sportsmen\templates\sportsmen\403.html:16
+msgctxt "403_page_error_text"
+msgid "Доступ к данной странице запрещен!"
+msgstr "Access to this page is prohibited!"
+
+#: .\sportsmen\templates\sportsmen\404.html:6
+msgctxt "404_error_block_title"
+msgid "Ошибка"
+msgstr "Error"
+
+#: .\sportsmen\templates\sportsmen\404.html:16
+msgctxt "404_page_error_text"
+msgid "Извините, страница не найдена!"
+msgstr "Sorry, page not found!"
+
+#: .\sportsmen\templates\sportsmen\500.html:6
+msgctxt "500_error_block_title"
+msgid "Ошибка"
+msgstr "Error"
+
+#: .\sportsmen\templates\sportsmen\500.html:16
+msgctxt "500_page_error_text"
+msgid "Внутреняя ошибка сервера!"
+msgstr "Internal server error!"
+
+#: .\sportsmen\templates\sportsmen\achievements.html:5
+msgctxt "achievements_block_title"
+msgid "Достижения"
+msgstr "Achievements"
+
+#: .\sportsmen\templates\sportsmen\achievements.html:18
+msgctxt "achievements_header"
+msgid "Достижения"
+msgstr "Achievements"
+
+#: .\sportsmen\templates\sportsmen\achievements.html:40
+msgctxt "achievements_submit"
+msgid "Сохранить"
+msgstr "Save"
+
+#: .\sportsmen\templates\sportsmen\base.html:7
+msgctxt "base_block_title"
+msgid "Главная"
+msgstr "Main"
+
+#: .\sportsmen\templates\sportsmen\footer.html:22
+msgctxt "footer_block_footer_contact"
+msgid "Контакты"
+msgstr "Contacts"
+
+#: .\sportsmen\templates\sportsmen\footer.html:39
+msgctxt "footer_block_footer_navigation"
+msgid "Навигация сайта"
+msgstr "Navigation"
+
+#: .\sportsmen\templates\sportsmen\footer.html:42
+msgctxt "footer_block_footer_rating"
+msgid "Рейтинги"
+msgstr "Ratings"
+
+#: .\sportsmen\templates\sportsmen\footer.html:45
+msgctxt "footer_block_footer_calorie"
+msgid "Калории"
+msgstr "Calories"
+
+#: .\sportsmen\templates\sportsmen\footer.html:50
+msgctxt "footer_block_footer_locale"
+msgid "Локализация"
+msgstr "Language"
+
+#: .\sportsmen\templates\sportsmen\footer.html:53
+msgctxt "footer_block_footer_locale"
+msgid "Русский"
+msgstr "Russian"
+
+#: .\sportsmen\templates\sportsmen\footer.html:56
+msgctxt "footer_block_footer_locale"
+msgid "English"
+msgstr "English"
+
+#: .\sportsmen\templates\sportsmen\footer.html:61
+msgctxt "footer_block_footer_social"
+msgid "MyTrueGym в соцсетях"
+msgstr "MyTrueGym in social"
+
+#: .\sportsmen\templates\sportsmen\footer.html:84
+msgctxt "footer_block_footer_copyright"
+msgid "Все права защищены"
+msgstr "All rights reserved"
+
+#: .\sportsmen\templates\sportsmen\header.html:12
+msgctxt "header_block_header"
+msgid "Рейтинги"
+msgstr "Ratings"
+
+#: .\sportsmen\templates\sportsmen\header.html:15
+msgctxt "header_block_header"
+msgid "Калории"
+msgstr "Calories"
+
+#: .\sportsmen\templates\sportsmen\header.html:20
+msgctxt "header_block_account"
+msgid "Аккаунт"
+msgstr "Account"
+
+#: .\sportsmen\templates\sportsmen\header.html:22
+msgctxt "header_block_header"
+msgid "Информация"
+msgstr "Information"
+
+#: .\sportsmen\templates\sportsmen\header.html:23
+msgctxt "header_block_header"
+msgid "Достижения"
+msgstr "Achievements"
+
+#: .\sportsmen\templates\sportsmen\header.html:24
+msgctxt "header_block_header"
+msgid "Настройка"
+msgstr "Settings"
+
+#: .\sportsmen\templates\sportsmen\header.html:25
+msgctxt "header_block_header"
+msgid "Выход"
+msgstr "Log out"
+
+#: .\sportsmen\templates\sportsmen\header.html:30
+msgctxt "header_block_header"
+msgid "Войти"
+msgstr "Log in"
+
+#: .\sportsmen\templates\sportsmen\header.html:31
+msgctxt "header_block_header"
+msgid "Регистрация"
+msgstr "Sign up"
+
+#: .\sportsmen\templates\sportsmen\index.html:5
+msgctxt "index_block_title"
+msgid "Главная страница"
+msgstr "Main page"
+
+#: .\sportsmen\templates\sportsmen\index.html:12
+msgctxt "index_block_body_p_main"
+msgid "Добро пожаловать на MyTrueGym"
+msgstr "Welcome to MyTrueGym"
+
+#: .\sportsmen\templates\sportsmen\index.html:13
+msgctxt "index_block_body_p"
+msgid ""
+"Здесь Вы можете записывать свои достижения и принять участие при составление "
+"рейтинга лучших результатов"
+msgstr ""
+"Here you can record your achievements and participate in the ranking of the "
+"best results"
+
+#: .\sportsmen\templates\sportsmen\info.html:6
+msgctxt "info_block_title"
+msgid "Аккаунт"
+msgstr "Account"
+
+#: .\sportsmen\templates\sportsmen\info.html:32
+msgctxt "info_data_info"
+msgid "Основные данные"
+msgstr "Main data"
+
+#: .\sportsmen\templates\sportsmen\info.html:69
+msgctxt "info_data_info"
+msgid "Достижения"
+msgstr "Achievements"
+
+#: .\sportsmen\templates\sportsmen\info.html:73
+msgctxt "rating_data_athlete"
+msgid "Атлет"
+msgstr "Athlete"
+
+#: .\sportsmen\templates\sportsmen\login.html:5
+msgctxt "login_block_title"
+msgid "Вход"
+msgstr "Log in"
+
+#: .\sportsmen\templates\sportsmen\login.html:18
+msgctxt "login_login_text"
+msgid "Вход"
+msgstr "Log in"
+
+#: .\sportsmen\templates\sportsmen\login.html:30
+msgctxt "login_submit"
+msgid "Войти"
+msgstr "Log in"
+
+#: .\sportsmen\templates\sportsmen\logout.html:5
+msgctxt "logout_block_title"
+msgid "Выход"
+msgstr "Log out"
+
+#: .\sportsmen\templates\sportsmen\settings.html:5
+msgctxt "settings_block_title"
+msgid "Настройка"
+msgstr "Settings"
+
+#: .\sportsmen\templates\sportsmen\settings.html:18
+msgctxt "settings_header"
+msgid "Основные данные"
+msgstr "Main data"
+
+#: .\sportsmen\templates\sportsmen\settings.html:43
+msgctxt "settings_submit"
+msgid "Сохранить"
+msgstr "Save"
+
+#: .\sportsmen\templates\sportsmen\signup.html:6
+msgctxt "sign_up_block_title"
+msgid "Регистрация"
+msgstr "Sign up"
+
+#: .\sportsmen\views.py:34
+msgid "Для подтверждения почты перейдите по указанному вами адресу"
+msgstr "To confirm your email, go to the address you specified"
+
+#: .\sportsmen\views.py:38
+msgid "Почтовый адрес успешно подтвержден"
+msgstr "The mailing address has been successfully confirmed"
+
+#: .\sportsmen\views.py:90
+msgid "Проверьте корректность введенных данных"
+msgstr "Check that the entered data is correct"
+
+#: .\sportsmen\views.py:140
+msgid "Регистрация - этап {}"
+msgstr "Registration - stage {}"
+
+#: .\sportsmen\views.py:142
+msgid "Далее"
+msgstr "Next"
+
+#: .\sportsmen\views.py:146
+msgid "Получить код"
+msgstr "Get code"
+
+#: .\sportsmen\views.py:148
+msgid ""
+"Уже существует аккаунт с таким номером телефона или номер телефона "
+"некорректен"
+msgstr ""
+"An account already exists with this phone number or the phone number is "
+"incorrect"
+
+#: .\sportsmen\views.py:151
+msgid "Подтвердить код"
+msgstr "Confirm code"
+
+#: .\sportsmen\views.py:153
+msgid "Введенный код не подтвержден"
+msgstr "The entered code is not confirmed"
+
+#: .\sportsmen\views.py:157
+msgid "Создать аккаунт"
+msgstr "Join MyTrueGym"
+
+#: .\sportsmen\views.py:350 .\sportsmen\views.py:394
+msgid "Введенные данные некорректны"
+msgstr "The entered data is incorrect"
+
+msgid "run_60"
+msgstr "60 m running"
+
+msgid "run_100"
+msgstr "100 m running"
+
+msgid "run_3000"
+msgstr "3000 m running"
+
+msgid "chin_ups"
+msgstr "Chin up"
+
+msgid "push_ups"
+msgstr "Push up"
+
+msgid "sit_ups"
+msgstr "Sit up"
+
+msgid "squat"
+msgstr "Squat"
+
+msgid "bench_press"
+msgstr "Bench press"
+
+msgid "dead_lift"
+msgstr "Dead lift"
+
+msgid "phone_number"
+msgstr "Phone number"
+
+msgid "gender"
+msgstr "Gender"
+
+msgid "first_name"
+msgstr "First name"
+
+msgid "last_name"
+msgstr "Last name"
+
+msgid "email"
+msgstr "Email"
+
+msgid "athlete"
+msgstr "Athlete"
+
+msgid "avatar"
+msgstr "Фото"

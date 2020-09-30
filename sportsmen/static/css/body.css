@@ -1,0 +1,169 @@
+.body {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.page_error_image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.page_error_text p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.achievements {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+.achievements_header {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.achievements_form tr {
+    padding-top: 20px;
+}
+
+.achievements_form_row_label {
+    padding-top: 20px;
+}
+
+.achievements_form_row_input {
+    padding-top: 20px;
+}
+
+.achievements_input {
+    margin-left: 30%;
+    width: 100px;
+    padding-top: 20px;
+}
+
+.ratings_header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+.ratings_header p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.ratings_results {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+.ratings_results_td {
+    padding-top: 20px;
+}
+
+.ratings_results_td:nth-child(1n) {
+    width: 300px;
+    text-align: center;
+}
+
+.ratings_results_td:nth-child(2n) {
+    width: 100px;
+    text-align: center;
+}
+
+.ratings_results_td:nth-child(3n) {
+    width: 100px;
+    text-align: center;
+}
+
+.ratings_header_not_results {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.login_text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.login_error p {
+    text-align: center;
+    color: red;
+}
+
+.login_text p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.input_field input, select {
+    width: 300px;
+}
+
+.form_login {
+    padding-top: 20px;
+}
+
+.login {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.login_form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+.login_form_input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25px;
+    padding-top: 20px;
+}
+
+.settings_header {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.settings_form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.settings_input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    margin-top: 30px;
+}
+
+.settings_form_row_label {
+    padding-top: 20px;
+}
+
+.settings_form_row_input {
+    padding-top: 20px;
+}
+
+.settings_avatar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+.settings_form_row_input input {
+    width: 300px;
+}
+
+.achievements_error {
+    text-align: center;
+    color: red;
+}

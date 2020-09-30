@@ -1,0 +1,17 @@
+{% extends "sportsmen/footer.html" %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Главная страница" context "index_block_title" %}
+{% endblock %}
+
+{% block body %}
+<div class="body">
+    <div class="container">
+        <div class="welcome">
+            <p class="main"> {% trans "Добро пожаловать на MyTrueGym" context "index_block_body_p_main" %} </p>
+            <p> {% trans "Здесь Вы можете записывать свои достижения и принять участие при составление рейтинга лучших результатов" context "index_block_body_p" %} </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

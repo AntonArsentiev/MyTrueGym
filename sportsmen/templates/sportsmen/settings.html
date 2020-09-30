@@ -1,0 +1,50 @@
+{% extends "sportsmen/footer.html" %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Настройка" context "settings_block_title" %}
+{% endblock %}
+
+{% block body %}
+<div class="body">
+    <div class="container">
+        <div class="settings">
+            {% if error %}
+                <div class="signup_error">
+                    {{ error }}
+                </div>
+            {% endif %}
+            <div>
+                <p class="settings_header">{% trans "Основные данные" context "settings_header" %}</p>
+            </div>
+            <div class="settings_avatar">
+                <img src="{{ avatar.url }}" width="100px" height="100px">
+            </div>
+            <div class="settings_form">
+                <form action="/account/settings/" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <table>
+                        {% for field in form %}
+                        <tr class="settings_form_row">
+                            <td>
+                                <div class="settings_form_row_label">
+                                    {{ field.label_tag }}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="settings_form_row_input">
+                                    {{ field }}
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                    <div class="settings_input">
+                        <input type="submit" value="{% trans 'Сохранить' context 'settings_submit' %}">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

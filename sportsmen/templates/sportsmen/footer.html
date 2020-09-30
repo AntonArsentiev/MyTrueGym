@@ -1,0 +1,88 @@
+{% extends "sportsmen/header.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block footer %}
+<div class="footer">
+    <div class="container">
+        <!--<div class="footer_subscribe">-->
+            <!--<img src="{% static 'images/envelope.jpg' %}" width="32px" height="32px">-->
+            <!--<p>Подпишитесь на новые статьи и улучшения сайта!</p>-->
+            <!--<form class="form-inline">-->
+                <!--<div class="form-group">-->
+                    <!--<input type="email" class="form-control" id="exampleInputEmail2" placeholder="anyname.anysurname@example.com">-->
+                <!--</div>-->
+                <!--<button type="submit" class="btn btn-primary">Подписаться</button>-->
+            <!--</form>-->
+        <!--</div>-->
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <div>
+                    <h3 class="footer_header">{% trans "Контакты" context "footer_block_footer_contact" %}</h3>
+                </div>
+                <ul class="footer_social">
+                    <li>
+                        <a href="https://telegram.me/antonarsentiev" target="_blank">
+                            <img src="{%static 'images/telegram.jpg' %}" width="32px" height="32px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=79252998850" target="_blank">
+                            <img src="{%static 'images/whatsapp.jpg' %}" width="32px" height="32px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    <h3 class="footer_header">{% trans "Навигация сайта" context "footer_block_footer_navigation" %}</h3>
+                </div>
+                <div>
+                    <a class="footer_link" href="{% url 'ratings-index' %}">{% trans "Рейтинги" context "footer_block_footer_rating" %}</a>
+                </div>
+                <div>
+                    <a class="footer_link" href="{% url 'calories-index' %}">{% trans "Калории" context "footer_block_footer_calorie" %}</a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    <h3 class="footer_header">{% trans "Локализация" context "footer_block_footer_locale" %}</h3>
+                </div>
+                <div>
+                    <a class="footer_link" href="{% url 'sportsmen-lang' 'ru' %}">{% trans "Русский" context "footer_block_footer_locale" %}</a>
+                </div>
+                <div>
+                    <a class="footer_link" href="{% url 'sportsmen-lang' 'en' %}">{% trans "English" context "footer_block_footer_locale" %}</a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    <h3 class="footer_header">{% trans "MyTrueGym в соцсетях" context "footer_block_footer_social" %}</h3>
+                </div>
+                <ul class="footer_social">
+                    <li>
+                        <a href="https://vk.com/ktrnph" target="_blank">
+                            <img src="{% static 'images/vk.png' %}" width="32px" height="32px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/antoine_arsentiev" target="_blank">
+                            <img src="{% static 'images/instagram.png' %}" width="32px" height="32px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCaHNes5zTjGJveMfAC5rU_g" target="_blank">
+                            <img src="{% static 'images/youtube.png' %}" width="32px" height="32px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>© MyTrueGym, 2020. {% trans "Все права защищены" context "footer_block_footer_copyright" %}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

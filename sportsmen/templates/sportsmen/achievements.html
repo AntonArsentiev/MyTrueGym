@@ -1,0 +1,47 @@
+{% extends "sportsmen/footer.html" %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Достижения" context "achievements_block_title" %}
+{% endblock %}
+
+{% block body %}
+<div class="body">
+    <div class="container">
+        <div class="achievements">
+            {% if error %}
+                <div class="achievements_error">
+                    {{ error }}
+                </div>
+            {% endif %}
+            <div>
+                <p class="achievements_header">{% trans "Достижения" context "achievements_header" %}</p>
+            </div>
+            <div class="achievements_form">
+                <form action="/account/achievements/" method="POST">
+                    {% csrf_token %}
+                    <table>
+                        {% for field in form %}
+                        <tr class="achievements_form_row">
+                            <td>
+                                <div class="achievements_form_row_label">
+                                    {{ field.label_tag }}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="achievements_form_row_input">
+                                    {{ field }}
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                    <div class="achievements_input">
+                        <input type="submit" value="{% trans 'Сохранить' context 'achievements_submit' %}">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

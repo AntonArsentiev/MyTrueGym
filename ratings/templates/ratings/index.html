@@ -1,0 +1,32 @@
+{% extends "sportsmen/footer.html" %}
+{% load i18n %}
+{% load l10n %}
+
+{% block title %}
+    {% trans "Рейтинги" context "ratings_block_title" %}
+{% endblock %}
+
+{% block body %}
+<div class="body">
+    <div class="container">
+        <div class="ratings_header">
+            {% if data %}
+            <p>{% trans "Общие рейтинги" context "ratings_header" %}</p>
+            {% else %}
+            <p class="ratings_header_not_results">{% trans "Результаты не сформированы" context "ratings_header" %}</p>
+            {% endif %}
+        </div>
+        <div class="ratings_results">
+            <table>
+                {% for field in data %}
+                <tr>
+                    {% for item in field %}
+                    <td class="ratings_results_td">{% localize off %} {{ item }} {% endlocalize %}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

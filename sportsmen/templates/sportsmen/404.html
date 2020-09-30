@@ -1,0 +1,20 @@
+{% extends "sportsmen/footer.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Ошибка" context "404_error_block_title" %}
+{% endblock %}
+
+{% block body %}
+<div class="body">
+    <div class="container">
+        <div class="page_error_image">
+            <img src="{% static 'images/404.jpg' %}">
+        </div>
+        <div class="page_error_text">
+            <p>{% trans "Извините, страница не найдена!" context "404_page_error_text" %}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
